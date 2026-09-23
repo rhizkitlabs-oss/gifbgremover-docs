@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - GIF Background Remover</title>
+<meta name="description" content="What GIF Background Remover accesses on your PC and what it does with it. Short version: nothing leaves your machine.">
+<meta name="theme-color" content="#5761ef">
+<style>
+  :root{
+    --purple:#7c3aed; --blue:#2563eb;
+    --grad:linear-gradient(135deg,var(--purple),var(--blue));
+    --bg:#f7f7fb; --surface:#fff; --border:#e3e3ec; --text:#16161d; --muted:#6b6b7b;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#0f0f16; --surface:#17171f; --border:#2a2a37; --text:#f1f1f6; --muted:#9797a8; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif}
+  main{max-width:44rem;margin:0 auto;padding:2.5rem 1.5rem 4rem}
+  h1{margin:0 0 .5rem;font-size:2rem;font-weight:800;letter-spacing:-.02em;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  h2{margin-top:2.25rem;font-size:1.3rem;border-top:1px solid var(--border);padding-top:1.5rem}
+  p,li{line-height:1.65}
+  code{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:.1rem .35rem;font-size:.9em}
+  .callout{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--purple);
+    border-radius:8px;padding:.9rem 1.1rem;margin:1.25rem 0;font-size:.95rem;color:var(--muted)}
+  .muted{color:var(--muted);font-size:.9rem}
+  a{color:var(--purple)}
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="muted"><strong>GIF Background Remover</strong> &mdash; a Windows app by Rhizkit. Effective date: 23 September 2026.</p>
+
+  <div class="callout">
+    <strong>Short version:</strong> GIF Background Remover runs entirely on your PC.
+    It collects nothing, sends nothing, and has no servers. Besides the transparent
+    GIFs you ask it to create, the only file it writes is a small local preference
+    file with your last-used settings.
+  </div>
+
+  <h2>What the app accesses</h2>
+  <p>GIF Background Remover only touches the files you explicitly point it at:</p>
+  <ul>
+    <li>It <strong>reads the GIF files</strong> you add to the queue, to detect their background color, show a preview, and remove the background.</li>
+    <li>It <strong>writes new files</strong> named <code>name_transparent.gif</code> &mdash; next to the original, or in a folder you choose. Your original GIFs are never modified, moved, or deleted.</li>
+  </ul>
+  <p>That is the full extent of its file access. It does not scan your drives, read other documents, or touch anything you did not select.</p>
+
+  <h2>What is stored on your PC</h2>
+  <p>The app keeps two small things locally, both under
+  <code>%LOCALAPPDATA%\GifBgRemover\</code> (on a Microsoft Store install, this
+  is redirected inside the app's own package data folder under
+  <code>%LOCALAPPDATA%\Packages\</code>):</p>
+  <ul>
+    <li>A tiny <code>config.json</code> file remembering your settings (background mode, custom color, tolerance, clean-edges value) and the output folder you chose, if any. It contains no image content and no personal information beyond a folder path you selected yourself.</li>
+    <li>A local cache used only to render the app's own interface (the interface is a local web view).</li>
+  </ul>
+  <p>Both can be cleared at any time by resetting the app from Windows Settings, or by deleting that folder.</p>
+
+  <h2>What the app does NOT do</h2>
+  <ul>
+    <li>It makes <strong>no internet connections</strong> &mdash; there is no server for it to talk to. The optional "View in Store" button only asks Windows to open the Microsoft Store app on another Rhizkit product page; the app itself sends nothing.</li>
+    <li>It contains <strong>no analytics, telemetry, advertising, or third-party SDK</strong>.</li>
+    <li>It does <strong>not</strong> capture your screen, read your clipboard, or log keystrokes.</li>
+    <li>It does <strong>not</strong> upload your GIFs anywhere. All processing happens on your machine.</li>
+  </ul>
+
+  <h2>Third parties</h2>
+  <p>None. GIF Background Remover shares data with no one, because it collects no data
+  and has no connection over which to share it. The app relies on the Microsoft Edge
+  WebView2 Runtime (a standard Windows component from Microsoft) to draw its interface;
+  it sends nothing over the network on this app's behalf.</p>
+
+  <h2>Children</h2>
+  <p>GIF Background Remover collects no personal information from anyone, including children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted here with a new effective date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy, or anything else: <a href="mailto:rhizkit.labs@gmail.com">rhizkit.labs@gmail.com</a>.</p>
+</main>
+</body>
+</html>
