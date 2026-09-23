@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GIF Background Remover</title>
+<meta name="description" content="Make GIF backgrounds transparent in bulk on Windows. Auto-detects the background color, keeps dark details inside your artwork, 100% offline. Free.">
+<meta name="theme-color" content="#5761ef">
+<style>
+  :root{
+    --purple:#7c3aed; --blue:#2563eb;
+    --grad:linear-gradient(135deg,var(--purple),var(--blue));
+    --bg:#f7f7fb; --surface:#fff; --border:#e3e3ec; --text:#16161d; --muted:#6b6b7b;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#0f0f16; --surface:#17171f; --border:#2a2a37; --text:#f1f1f6; --muted:#9797a8; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif}
+  main{max-width:44rem;margin:0 auto;padding:3rem 1.5rem 4rem}
+  header{text-align:center;margin-bottom:2.5rem}
+  .badge{display:inline-block;width:72px;height:72px;border-radius:18px;margin-bottom:1rem}
+  .cta{display:inline-block;margin-top:1.25rem;background:var(--grad);color:#fff;text-decoration:none;font-weight:700;padding:.75rem 1.4rem;border-radius:10px}
+  h1{margin:0 0 .5rem;font-size:2.1rem;font-weight:800;letter-spacing:-.02em;
+    background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .tagline{color:var(--muted);font-size:1.1rem;margin:0 auto;max-width:34rem;line-height:1.5}
+  h2{margin-top:2.25rem;font-size:1.2rem;border-top:1px solid var(--border);padding-top:1.5rem}
+  p,li{line-height:1.65}
+  .steps{list-style:none;margin:0;padding:0;display:grid;gap:.9rem}
+  .steps li{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:.9rem 1.1rem}
+  .steps b{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .callout{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--purple);
+    border-radius:8px;padding:.9rem 1.1rem;margin:1.25rem 0;font-size:.95rem;color:var(--muted)}
+  code{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:.1rem .35rem;font-size:.9em}
+  .price{font-size:1.4rem;font-weight:800}
+  .muted{color:var(--muted);font-size:.9rem}
+  a{color:var(--purple)}
+  footer{margin-top:2.5rem;border-top:1px solid var(--border);padding-top:1.5rem;color:var(--muted);font-size:.9rem;text-align:center}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img class="badge" src="icon.png" alt="GIF Background Remover icon">
+    <h1>GIF Background Remover</h1>
+    <p class="tagline">A free Windows app by Rhizkit. Make the solid background of your GIF animations transparent &mdash; a whole folder at a time, entirely on your own PC.</p>
+    <a class="cta" href="https://apps.microsoft.com/detail/9PPM71GQ9ZTS">Get it free on the Microsoft Store</a>
+  </header>
+
+  <h2>What it does</h2>
+  <ul class="steps">
+    <li><b>Auto-detects the background</b> &mdash; reads the color around the edges of each GIF, so a batch of black, white, and colored backgrounds just works.</li>
+    <li><b>Keeps your artwork intact</b> &mdash; only background connected to the edge of the frame is removed. Dark shadows and details inside your subject stay, even when they match the background color.</li>
+    <li><b>Clean edges</b> &mdash; trim the thin fringe that GIF transparency can leave around a subject, with a live animated before/after preview.</li>
+    <li><b>Batch everything</b> &mdash; add files or whole folders. Results are saved as <code>name_transparent.gif</code>; your originals are never modified.</li>
+  </ul>
+
+  <div class="callout">
+    100% offline: no account, no upload, no subscription. Your GIFs never leave your PC.
+  </div>
+
+  <h2>Price</h2>
+  <p class="price">Free</p>
+  <p class="muted">For Windows 10 (1809+) and Windows 11, 64-bit.</p>
+
+  <footer>
+    <p><a href="privacy.html">Privacy Policy</a> &middot; <a href="mailto:rhizkit.labs@gmail.com">rhizkit.labs@gmail.com</a></p>
+    <p>&copy; 2026 Rhizkit</p>
+  </footer>
+</main>
+</body>
+</html>
